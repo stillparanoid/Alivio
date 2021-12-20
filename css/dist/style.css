@@ -84,7 +84,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -98,29 +99,35 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /*
 body {
@@ -139,7 +146,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 button {
   width: auto;
@@ -151,13 +159,16 @@ button {
   line-height: 25px;
   white-space: nowrap;
   border-radius: 10px;
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 .left {
-  float: left; }
+  float: left;
+}
 
 .right {
-  float: right; }
+  float: right;
+}
 
 .header {
   position: fixed;
@@ -165,31 +176,37 @@ button {
   height: 85px;
   width: 100vw;
   background: #FFFFFF;
-  z-index: 100; }
-  .header .inner {
-    margin: 17px 275px;
-    height: 51px;
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
-    .header .inner .text-logo {
-      font: 30px "Lato", sans-serif;
-      line-height: 51px;
-      color: #01996D;
-      width: 10%;
-      margin: 0;
-      font-weight: 800; }
-    .header .inner .menu {
-      width: 65%;
-      padding: 20%; }
-    .header .inner .menu a {
-      width: 25%;
-      float: left;
-      text-decoration: none;
-      line-height: 51px; }
-    .header .inner .signin {
-      width: 10%; }
+  z-index: 100;
+}
+.header .inner {
+  margin: 17px 275px;
+  height: 51px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .inner .text-logo {
+  font: 30px "Lato", sans-serif;
+  line-height: 51px;
+  color: #01996D;
+  width: 10%;
+  margin: 0;
+  font-weight: 800;
+}
+.header .inner .menu {
+  width: 65%;
+  padding: 20%;
+}
+.header .inner .menu a {
+  width: 25%;
+  float: left;
+  text-decoration: none;
+  line-height: 51px;
+}
+.header .inner .signin {
+  width: 10%;
+}
 
 .main-block {
   background-image: url(/img/BG.png);
@@ -197,23 +214,25 @@ button {
   width: 100vw;
   height: 900px;
   position: relative;
-  margin-top: 85px; }
-  .main-block .main-block-inner {
-    width: 440px;
-    position: absolute;
-    top: 275px;
-    left: 275px; }
-  .main-block h1 {
-    color: #01996D;
-    font-family: Georgia;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    line-height: 74px; }
-  .main-block p {
-    padding: 30px 0;
-    font: "Lato", sans-serif;
-    font-size: 20px;
-    line-height: 31px; }
-
-/*# sourceMappingURL=style.css.map */
+  margin-top: 85px;
+}
+.main-block .main-block-inner {
+  width: 440px;
+  position: absolute;
+  top: 275px;
+  left: 275px;
+}
+.main-block h1 {
+  color: #01996D;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 74px;
+}
+.main-block p {
+  padding: 30px 0;
+  font: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 31px;
+}
