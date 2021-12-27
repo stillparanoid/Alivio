@@ -152,14 +152,25 @@ body {
 button {
   width: auto;
   background-color: #01996D;
-  border: none;
   color: #FFFFFF;
   padding: 13px 50px;
-  font: 20px "Lato", sans-serif;
+  font: 20px Lato;
   line-height: 25px;
   white-space: nowrap;
-  border-radius: 10px;
   font-weight: 800;
+  cursor: pointer;
+  border: 1px solid #01996D;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996D;
 }
 
 .left {
@@ -187,7 +198,7 @@ button {
   justify-content: space-around;
 }
 .header .inner .text-logo {
-  font: 30px "Lato", sans-serif;
+  font: 30px Lato;
   line-height: 51px;
   color: #01996D;
   width: 10%;
@@ -198,14 +209,26 @@ button {
   width: 65%;
   padding: 20%;
 }
-.header .inner .menu a {
+.header .inner a {
   width: 25%;
   float: left;
   text-decoration: none;
   line-height: 51px;
+  font: 20px Lato;
+  font-weight: 500;
+  cursor: pointer;
 }
 .header .inner .signin {
   width: 10%;
+}
+
+.main {
+  width: 70vw;
+  margin: 0 auto 100px;
+}
+
+.green {
+  background-color: #245852;
 }
 
 .main-block {
@@ -232,7 +255,172 @@ button {
 }
 .main-block p {
   padding: 30px 0;
-  font: "Lato", sans-serif;
+  font-family: Lato;
   font-size: 20px;
   line-height: 31px;
+}
+
+.how-it-works .hit-1 {
+  margin: 150px 0;
+}
+.how-it-works h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+}
+.how-it-works .columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+}
+.how-it-works .columns .row-1 {
+  width: 45%;
+}
+.how-it-works .columns .row-2 {
+  width: 45%;
+}
+.how-it-works .columns .row-2 p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+}
+
+.step-img {
+  width: 390px;
+  height: 492px;
+  background: no-repeat;
+  background-size: contain;
+}
+
+.steps > div {
+  width: 390px;
+  padding-top: 100px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.steps *::before {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  color: #01996D;
+  opacity: 0.3;
+  line-height: 150%;
+  text-align: center;
+}
+.steps *::after {
+  position: absolute;
+  top: 32px;
+  left: 100px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+}
+.steps p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+.steps .step-1 {
+  position: relative;
+}
+.steps .step-1 .step-img {
+  background-image: url(/img/step-1.png);
+  margin-top: 60px;
+}
+.steps .step-1::before {
+  content: "01";
+}
+.steps .step-1::after {
+  content: "Personalize";
+}
+.steps .step-2 {
+  margin-top: 300px;
+  position: relative;
+}
+.steps .step-2 .step-img {
+  background-image: url(/img/step-2.png);
+  margin-top: 37px;
+}
+.steps .step-2::before {
+  content: "02";
+}
+.steps .step-2::after {
+  content: "Write & Understand";
+  left: unset;
+  right: 0;
+}
+.steps .step-3 {
+  margin-top: 60px;
+  position: relative;
+}
+.steps .step-3 .step-img {
+  background-image: url(/img/step-3.png);
+  margin-top: 48px;
+}
+.steps .step-3::before {
+  content: "03";
+}
+.steps .step-3::after {
+  content: "Alivio!";
+}
+
+.video-block {
+  position: relative;
+  padding: 150px 0;
+}
+.video-block .clear {
+  clear: both;
+}
+
+.video-block-inner {
+  margin: 0 200px;
+  height: fit-content;
+}
+.video-block-inner .inner-column-1 {
+  width: 40%;
+  margin: auto 0;
+  height: 100%;
+}
+.video-block-inner .inner-column-1 h1,
+.video-block-inner .inner-column-1 p {
+  color: #FFFFFF;
+}
+.video-block-inner .inner-column-1 p {
+  padding: 60px 0;
+}
+.video-block-inner .inner-column-2 {
+  width: 895.84px;
+  height: 516.11px;
+  background-image: url(/img/video.png);
+  position: relative;
+}
+.video-block-inner .inner-column-2:hover {
+  cursor: pointer;
+}
+.video-block-inner .inner-column-2 .play {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
 }

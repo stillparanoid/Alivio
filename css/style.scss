@@ -1,5 +1,4 @@
-$font-stack: 'Lato',
-sans-serif;
+$font-stack: Lato;
 $primary-color: #01996D;
 $font-size: 20px;
 
@@ -159,14 +158,25 @@ body {
 button {
     width: auto;
     background-color: $primary-color;
-    border: none;
     color: #FFFFFF;
     padding: 13px 50px;
     font: 20px $font-stack;
     line-height: 25px;
     white-space: nowrap;
-    border-radius: 10px;
     font-weight: 800;
+    cursor: pointer;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+    color: $primary-color;
 }
 
 .left {
@@ -207,17 +217,29 @@ button {
             padding: 20%;
         }
 
-        .menu a {
+        a {
             width: 25%;
             float: left;
             text-decoration: none;
             line-height: 51px;
+            font: 20px $font-stack;
+            font-weight: 500;
+            cursor: pointer;
         }
 
         .signin {
             width: 10%;
         }
     }
+}
+
+.main {
+    width: 70vw;
+    margin: 0 auto 100px;
+}
+
+.green {
+    background-color: #245852;
 }
 
 .main-block {
@@ -243,10 +265,211 @@ button {
         font-size: 65px;
         line-height: 74px
     }
-    p{
+
+    p {
         padding: 30px 0;
-        font: $font-stack;
+        font-family: $font-stack;
         font-size: 20px;
         line-height: 31px;
     }
+}
+
+.how-it-works {
+    .hit-1 {
+        margin: 150px 0;
+    }
+
+    h2 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 157%;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+
+        .row-1 {
+            width: 45%;
+        }
+
+        .row-2 {
+            width: 45%;
+
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                color: #424242;
+            }
+        }
+    }
+}
+
+.step-img {
+    width: 390px;
+    height: 492px;
+    background: no-repeat;
+    background-size: contain;
+}
+
+.steps>div {
+    width: 390px;
+    padding-top: 100px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    *::before {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 150px;
+        color: $primary-color;
+        opacity: .3;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    *::after {
+        position: absolute;
+        top: 32px;
+        left: 100px;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    p {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    .step-1 {
+        .step-img {
+            background-image: url(/img/step-1.png);
+            margin-top: 60px;
+        }
+
+        position: relative;
+
+        &::before {
+            content: "01";
+        }
+
+        &::after {
+            content: "Personalize";
+        }
+    }
+
+    .step-2 {
+
+        .step-img {
+            background-image: url(/img/step-2.png);
+            margin-top: 37px;
+        }
+
+        margin-top: 300px;
+        position: relative;
+
+        &::before {
+            content: "02";
+        }
+
+        &::after {
+            content: "Write & Understand";
+            left: unset;
+            right: 0;
+        }
+    }
+
+    .step-3 {
+        .step-img {
+            background-image: url(/img/step-3.png);
+            margin-top: 48px;
+        }
+
+        margin-top: 60px;
+        position: relative;
+
+        &::before {
+            content: "03";
+        }
+
+        &::after {
+            content: "Alivio!";
+        }
+    }
+}
+
+.video-block {
+    position: relative;
+
+    .clear {
+        clear: both;
+    }
+
+    padding: 150px 0;
+}
+
+.video-block-inner {
+    margin: 0 200px;
+    height: fit-content;
+
+    .inner-column-1 {
+        width: 40%;
+        margin: auto 0;
+        height: 100%;
+
+        h1,
+        p {
+            color: #FFFFFF;
+        }
+
+        p {
+            padding: 60px 0;
+        }
+    }
+
+    .inner-column-2 {
+        width: 895.84px;
+        height: 516.11px;
+        background-image: url(/img/video.png);
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .play {
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+
+
+        }
+    }
+
+
 }
